@@ -24,6 +24,7 @@ body{
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
     color: var(--color-1);
+    background: var(--bg-color-1);
 }
 
 /* Common */
@@ -46,10 +47,18 @@ a{
     line-height: 1.19; /* 119.231% */
 }
 
-.text-1{
+.text-1, .text-2{
+    margin-top: 24px;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.86; /* 187.5% */
+}
+
+.text-2{
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
 }
 
 /* Logo */
@@ -93,6 +102,10 @@ a{
     color: #FFF;
 }
 /*  */
+
+.deco{
+    position: absolute;
+}
 
 /* Header */
 .header{
@@ -242,14 +255,12 @@ a{
 }
 
 /* Decoration */
-.decoration-1{
-    position: absolute;
+.hero__deco-1{
     left: -57.99px;
     top: 247.5px;
 }
 
-.decoration-2{
-    position: absolute;
+.hero__deco-2{
     top: 16.66px;
     left: 377.15px;
 }
@@ -330,7 +341,6 @@ a{
 }
 
 .about__desc{
-    margin-top: 24px;
     max-width: 431px;
 }
 
@@ -425,7 +435,7 @@ a{
     line-height: 1.43; /* 142.857% */
 }
 
-.about__stats--icon{
+.about__stats--deco{
     position: absolute;
     left: 84px;
     top: -40px;
@@ -436,5 +446,180 @@ a{
     right: -50.63px;
     top: 157px;
 }
+
+/* Pet Care */
+.pet-care{
+    margin-top: 43px;
+    padding: 55px 0;
+    background: #FFFAF5;
+}
+
+.pet-care__inner{
+    display: flex;
+    align-items: center;
+}
+
+.pet-care__media{
+    position: relative;
+    width: 458px;
+    height: 500px;
+    border-radius: 18px;
+    border: 2px solid #FFF;
+    background: linear-gradient(180deg, #C6E2FA 0%, #94C2EA 100%);
+    box-shadow: 0 17px 77px -8px rgba(190, 165, 139, 0.17);
+}
+
+.pet-care__thumb{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.pet-care__deco:nth-child(1){
+    top: 12.5px;
+    right: 63.16px;
+}
+
+.pet-care__deco:nth-child(2){
+    top: -16px;
+    right: 13px;
+}
+
+.pet-care__deco:nth-child(3){
+    top: 33px;
+    right: -21px;
+}
+
+.pet-care__deco:nth-child(4){
+    top: 268px;
+    left: 468px;
+}
+
+.pet-care__deco:nth-child(5){
+    top: 336px;
+    right: 19px;
+}
+
+.pet-care__deco:nth-child(6){
+    top: 435px;
+    left: 377px;
+}
+
+.pet-care__deco:nth-child(7){
+    top: 442.69px;
+    left: 386.4px;
+}
+
+.pet-care__deco:nth-child(8){
+    top: 446.96px;
+    left: 392.37px;
+}
+
+.pet-care__content{
+    width: 48%;
+    margin-left: 127px;
+}
+
+.pet-care__desc{
+    max-width: 511px;
+}
+
+.pet-care__list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 52px;
+    margin-left: -6px;
+}
+
+.pet-care__list::after{
+    position: absolute;
+    bottom: -2px;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    margin-left: 8px;
+    border-radius: 5px;
+    opacity: 0.07;
+    background: var(--primary-color);
+}
+
+.pet-care__item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.pet-care__item:after{
+    position: absolute;
+    bottom: -2px;
+    content: '';
+    display: inline-block;
+    width: 95px;
+    height: 2px;
+    margin-left: 8px;
+    border-radius: 2px;
+    background: var(--primary-color);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.pet-care__item:hover::after{
+    opacity: 1;
+}
+
+.pet-care__item:nth-child(2) .pet-care__item--icon{
+    display: inline-block;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+
+.pet-care__item:nth-child(3) .pet-care__item--icon{
+    display: inline-block;
+    padding: 7.5px 5px;
+}
+
+.pet-care__text{
+    margin-top: 36px;
+    max-width: 391px;
+}
+
+.pet-care__link{
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    color: var(--primary-color);
+}
+
+.pet-care__link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    display: inline-block;
+    width: 100%;
+    height: 1.5px;
+    border-radius: 2px;
+    background: var(--primary-color);
+    transition: opacity 0.5s;
+}
+
+.pet-care__link:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
 
 
