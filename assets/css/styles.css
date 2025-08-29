@@ -47,6 +47,18 @@ a{
     line-height: 1.19; /* 119.231% */
 }
 
+.heading.lv2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.heading.lv3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
 .text-1, .text-2{
     margin-top: 24px;
     font-size: 1.6rem;
@@ -92,7 +104,7 @@ a{
 
 .btn.btn-1{
     background: transparent;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border: 1px solid currentColor;
 }
 
@@ -125,8 +137,9 @@ a{
     display: flex;
 }
 
-.signup-btn{
+.header-top .signup-btn{
     --height: 50px;
+    color: var(--secondary-color);
     min-width: 117px;
     font-size: 1.4rem;
 }
@@ -612,11 +625,111 @@ a{
     opacity: 0.7;
 }
 
+/* Services */
+.services{
+    margin-top: 130px;
+    padding: 68px 0 100px;
+    background-color: #FFF6ED;
+}
 
+.services__top{
+    text-align: center;
+}
 
+.services__subtitle{
+    color: var(--color-2);
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 
+.services__body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 71px;
+}
 
+.services__col{
+    width: 25%;
+}
 
+.services__col:nth-child(2){
+    width: 35%;
+}
+
+.services__item{
+    height: 208px;
+    padding: 30px 22px 30px 28px;
+    background: #FFF;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+}
+
+.services__item + .services__item{
+    margin-top: 24px;
+}
+
+.services__item--title{
+    position: relative;
+    padding-left: 12px;
+}
+
+.services__item--title::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 22px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+}
+
+.services__item--desc{
+    margin-top: 18px;
+    max-width: 244px;
+}
+
+.services__item--link{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-top: 24px;
+    color: #34396A;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.services__col:nth-child(2){
+    position: relative;
+    margin-top: 260px;
+    width: 410px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+}
+
+.services__img{
+    position: absolute;
+    bottom: 0;
+    left: -22px;
+}
+
+.services__footer{
+    text-align: center;
+}
+
+.services__btn{
+    --height: 56px;
+
+    min-width: 214px;
+    margin-top: -17px;
+}
 
 
 
