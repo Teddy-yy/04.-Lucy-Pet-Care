@@ -632,11 +632,13 @@ a{
     background-color: #FFF6ED;
 }
 
-.services__top{
+.services__top,
+.staff__top{
     text-align: center;
 }
 
-.services__subtitle{
+.services__subtitle,
+.staff__subtitle{
     color: var(--color-2);
     font-family: var(--font-heading);
     font-size: 1.6rem;
@@ -729,6 +731,86 @@ a{
 
     min-width: 214px;
     margin-top: -17px;
+}
+
+/* Staff */
+.staff{
+    margin-top: 65px;
+    padding: 65px 0;
+}
+
+.staff__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+    margin-top: 45px;
+}
+
+.staff__item{
+    text-align: center;
+}
+
+.staff__item--top{
+    position: relative;
+}
+
+.staff__wrapper{
+    position: relative;
+    width: 88%;
+    height: 266px;
+    border-radius: 129.5px;
+    margin: 0 auto;
+}
+
+.staff__item:nth-child(1) .staff__wrapper{
+    background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
+}
+
+.staff__item:nth-child(2) .staff__wrapper{
+    background: linear-gradient(180deg, #FF997E 0%, #F3752E 100%);
+}
+
+.staff__item:nth-child(3) .staff__wrapper{
+    background: linear-gradient(180deg, #FABF3E 0%, #FFA14A 100%);
+}
+
+.staff__item:nth-child(4) .staff__wrapper{
+    background: linear-gradient(180deg, #5BD6E2 0%, #00A7CC 100%);
+}  
+
+.staff__item--img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 129.5px;
+}
+
+.staff__deco--top{
+    bottom: 0;
+    left: 0;
+}
+
+.staff__deco--bottom{
+    top: 0;
+    left: 0;
+}
+
+.staff__info{
+    margin-top: 29px;
+}
+
+.staff__position{
+    margin-bottom: 14px;
+}
+
+.staff__cta{
+    margin-top: 48px;
+    text-align: center;
+}
+
+.staff__btn{
+    min-width: 193px;
 }
 
 
