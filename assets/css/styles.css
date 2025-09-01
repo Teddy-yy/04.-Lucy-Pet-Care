@@ -831,6 +831,7 @@ a{
 
 .pricing__body{
     margin-top: 38px;
+    padding: 0 88px;
 }
 
 .pricing__toggle{
@@ -979,6 +980,131 @@ a{
     margin-bottom: 5px;
     rotate: -45deg;
 }
+
+/* Reviews */
+.reviews{
+    margin-top: 53px;
+    padding: 77px 0 129px;
+}
+
+.reviews__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviews button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid currentColor;
+    background: transparent;
+    flex-shrink: 0;
+    transition: background, color, border-color;
+    transition-duration: .25s;
+}
+
+.reviews button:hover{
+    background: var(--primary-color);
+    color: #FFF;
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.next-btn{
+    transform: rotate(180deg);
+}
+
+.reviews__body{
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    margin: 0 76px 0 44px;
+}
+
+.reviews__avatar{
+    width: 274px;
+    height: 427px;  
+    border-radius: 137px;
+    overflow: hidden;
+}
+
+.reviews__wrapper{
+    position: relative;
+    margin-top: 77px;
+    width: 274px;
+    height: 350px;
+    background: #FFDA54;
+    border-radius: 137px;
+}
+
+.reviews__img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    object-fit: contain;
+}
+
+.reviews__content{
+    max-width: 553px;
+}
+
+.reviews__text{
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.56; /* 155.556% */
+}
+
+.reviews__name{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+    margin-top: 34px;
+    color: #282828;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.reviews__name::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background: #000;
+}
+
+.reviews__dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 4px;
+    margin-top: 56px;
+}
+
+.reviews__dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #FF5B2E;
+}
+
+.reviews__dot--active{
+    width: 24px;
+    height: 8px;
+    background: var(--primary-color);
+}
+
+
 
 
 
