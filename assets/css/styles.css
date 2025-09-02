@@ -88,6 +88,10 @@ a{
 /*  */
 
 /* Button */
+.no-hover{
+    
+}
+
 .btn{
     display: inline-block;
     --height: 56px;
@@ -98,14 +102,18 @@ a{
     transition: opacity .25s;
 }
 
-.btn:hover{
-    opacity: 0.7;
-}
-
 .btn.btn-1{
     background: transparent;
     color: var(--primary-color);
     border: 1px solid currentColor;
+    transition: background, color, border-color;
+    transition-duration: .25s;
+}
+
+.btn.btn-1:hover{
+    background: var(--primary-color);
+    color: #FFF;
+    border-color: var(--primary-color);
 }
 
 .btn.btn-2{
@@ -144,12 +152,22 @@ a{
     font-size: 1.4rem;
 }
 
+.header-top .signup-btn:hover{
+    background: var(--secondary-color);
+    color: #FFF;
+    border-color: var(--secondary-color);
+}
+
 .navbar__link{
     display: inline-block;
     padding: 5px 18px;
     color: var(--color-2);
     font-size: 14px;
     font-weight: 500;
+}
+
+.navbar__link:hover{
+    text-shadow: -0.2px 0.2px var(--secondary-color);
 }
 
 .navbar__link-active{
@@ -846,6 +864,9 @@ a{
     border: 1px solid var(--primary-color);
     border-radius: 31px;
     cursor: pointer;
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid currentColor;
 }
 
 .pricing__label::after{
@@ -1000,12 +1021,7 @@ a{
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    color: var(--primary-color);
-    border: 1px solid currentColor;
-    background: transparent;
     flex-shrink: 0;
-    transition: background, color, border-color;
-    transition-duration: .25s;
 }
 
 .reviews button:hover{
@@ -1132,22 +1148,26 @@ a{
     margin-top: 54px;
 }
 
-.blog__item:nth-child(2){
+.blog__item:nth-child(1) .blog__media{
+    background: #90CCFF;
+}
+
+.blog__item:nth-child(2) .blog__media{
     background: #FF997E;
 }
 
-.blog__item:nth-child(3){
+.blog__item:nth-child(3) .blog__media{
     background: #5BD6E2;
 }
 
 .blog__item{
-    height: 362px;
-    border-radius: 24px;
-    background: #90CCFF;
+    
 }
 
 .blog__media{
+    height: 362px;
     padding: 24px 0 0 36px;
+    border-radius: 24px;
 }
 
 .blog__date{
@@ -1177,6 +1197,145 @@ a{
 .blog__text{
     margin-top: 16px;
     padding-right: 7px;
+}
+
+/* Footer */
+.footer{
+    position: relative;
+    margin-top: 65px;
+    padding: 52px 0 48px;
+}
+
+.footer::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 615px;
+    height: 516px;
+    background: #FFF6ED;
+}
+
+.footer__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__left{
+    width: 23%;
+    z-index: 1;
+}
+
+.footer__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 22px;
+    margin-top: 40px;
+    width: 268px;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: #FFF;
+}
+
+.footer__input{
+    border: none;
+    outline: none;
+    width: 260px;
+    line-height: 40px;
+}
+
+.footer__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 46px;
+    border-radius: 50%;
+    opacity: 1;
+    flex-shrink: 0;
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+.footer__socials{
+    margin-top: 68px;
+}
+
+.footer__social{
+    display: flex;
+    margin-top: 16px;
+}
+
+.footer__socials--title{
+    line-height: 1.11; /* 111.111% */
+}
+
+.footer__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    background: #FFF;
+}
+
+.footer__icon + .footer__icon{  
+    margin-left: 16px;
+}
+
+.footer__icon:hover{
+    background-color: var(--secondary-color);
+    color: #FFF;
+}
+
+.footer__right{
+    width: 48%;
+}
+
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__row + .footer__row{
+    margin-top: 58px;
+}
+
+.footer__section{
+    width: 50%;
+}
+
+.footer__title{
+    line-height: 1.11;
+}
+
+.footer__list{
+    margin-top: 14px;
+}
+
+.footer__link,
+.footer__text{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2; /* 200% */
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+    color: #000958;
+}
+
+.footer__bottom{
+    margin-top: 52px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.17; /* 116.667% */
+    text-align: center;
 }
 
 
